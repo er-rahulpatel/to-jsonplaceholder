@@ -31,7 +31,7 @@ git clone https://github.com/rahulpatel-langara/to-jsonplaceholder.git
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ The post author information.  	  
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ The list of comments.  
 ✅ Mechanism to favorite/unfavorite a post  	  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ Favorite posts display at the top of the list.    	 
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ Favorite posts display at the top of the list.  
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ Favorite posts have a star indicator.  
 ✅ Mechanism to delete a post.  
 ✅ Mechanism to remove all posts except the favorites ones.  
