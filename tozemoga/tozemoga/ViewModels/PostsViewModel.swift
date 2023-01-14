@@ -27,13 +27,13 @@ class PostsViewModel {
         return posts.count
     }
     
+    //To get single post
     func post(at index:Int) -> Post? {
         guard index < posts.count else { return nil }
         return index < favorites.count ? favorites[index] : unfavorites[index - favorites.count]
-        
     }
     
-    // To keep track of favoriting posts
+    //To change favorite state of post
     func toggleFavorite(post: Post?) {
         guard let index = posts.firstIndex(where: { $0.id == post?.id }) else { return }
         posts[index].isFavorite = !posts[index].isFavorite

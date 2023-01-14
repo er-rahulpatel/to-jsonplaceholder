@@ -14,7 +14,6 @@ class CommentsView: UIView {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        
     }
     
     func configureView(for comments:[Comment]) {
@@ -31,15 +30,6 @@ class CommentsView: UIView {
             self.commentsTableViewHeight.constant = self.commentsTableView.contentSize.height
         }
     }
-    
-    /*
-     // Only override draw() if you perform custom drawing.
-     // An empty implementation adversely affects performance during animation.
-     override func draw(_ rect: CGRect) {
-     // Drawing code
-     }
-     */
-    
 }
 extension CommentsView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

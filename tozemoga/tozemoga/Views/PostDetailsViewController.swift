@@ -8,6 +8,7 @@
 import UIKit
 
 class PostDetailsViewController: UIViewController {
+    // MARK: - Variables
     let apiController = ApiController()
     var post: Post!
     var delegate: PostDetailsViewProtocol?
@@ -16,14 +17,22 @@ class PostDetailsViewController: UIViewController {
     @IBOutlet weak var userView: UserView!
     @IBOutlet weak var commentView: CommentsView!
     @IBOutlet weak var isFavoriteButton: UIButton!
+    var loadingIndicator: LoadingIndicatorView!
     
+    // MARK: - Life cycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLoadingIndicator()
         bindViewModel()
         showPostView()
         showUserView()
         showCommentsView()
         updateFavoriteButtonState()
+    }
+    // MARK: - Private functions
+    private func setupLoadingIndicator() {
+        loadingIndicator = LoadingIndicatorView(style: .large)
+        loadingIndicator.configure(for: self.view, apiController: apiController)
     }
     
     private func bindViewModel() {
@@ -35,14 +44,22 @@ class PostDetailsViewController: UIViewController {
     }
     
     private func showUserView() {
-        viewModel.fetchUser { [weak self] in
+        viewModel.fetchUser { [weak self] error in
+            if let error = error {
+                // handle the error
+                print("Error: \(error.localizedDescription)")
+            }
             guard let self = self else { return }
             self.userView.user = self.viewModel.userInfo()
         }
     }
     
     private func showCommentsView(){
-        viewModel.fetchComments { [weak self] in
+        viewModel.fetchComments { [weak self] error in
+            if let error = error {
+                // handle the error
+                print("Error: \(error.localizedDescription)")
+            }
             guard let self = self else { return }
             DispatchQueue.main.async {
                 self.commentView.configureView(for: self.viewModel.comments())
@@ -50,11 +67,11 @@ class PostDetailsViewController: UIViewController {
         }
     }
     
-    private func updateFavoriteButtonState(){
+    func updateFavoriteButtonState(){
         isFavoriteButton.setImage(viewModel.isPostFavorite() ? UIImage(systemName: "star.fill") : UIImage(systemName: "star")  , for: .normal)
     }
     
-    
+    // MARK: - IBActions
     @IBAction func deletePostTapped(_ sender: Any) {
         let alert = UIAlertController(title: "Delete Post", message: "Are you sure you want to delete this post?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: { [weak self] action in
@@ -62,11 +79,9 @@ class PostDetailsViewController: UIViewController {
             guard let delegate = self.delegate else {return}
             delegate.deletePost(post: self.viewModel.post)
             self.navigationController?.popViewController(animated: true)
-            
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler:nil))
         self.present(alert, animated: true)
-        
     }
     
     @IBAction func favoriteTapped(_ sender: Any) {
@@ -75,14 +90,4 @@ class PostDetailsViewController: UIViewController {
         guard let delegate = delegate else {return}
         delegate.toggleFavorite(post: viewModel.post)
     }
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }

@@ -7,8 +7,6 @@
 
 import Foundation
 
- 
-
 protocol ApiControllerProtocol {
     func load<T: Decodable>(endpoint: Endpoint, completion: @escaping (Result<T, Error>) -> Void)
 }
@@ -33,7 +31,6 @@ class ApiController: ApiControllerProtocol {
             self.isLoading = false
             self.isLoadingObserver?(self.isLoading)
             if let error = error {
-                
                 completion(.failure(error))
                 return
             }

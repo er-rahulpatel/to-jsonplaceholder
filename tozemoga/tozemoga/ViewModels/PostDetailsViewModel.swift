@@ -21,15 +21,17 @@ class PostDetailsViewModel {
         self.userViewModel = UserViewModel(userId: post.userId, apiController: self.apiController)
     }
     
-    func fetchUser(completion: @escaping () -> Void) {
-        userViewModel.loadUserInfo { result in
-            completion()
+    //To fetch user information
+    func fetchUser(completion: @escaping (Error?) -> Void) {
+        userViewModel.loadUserInfo { error in
+            completion(error)
         }
     }
     
-    func fetchComments(completion: @escaping () -> Void) {
-        commentViewModel.loadComments(for: post) { result in
-            completion()
+    //To fetch all comments for the post
+    func fetchComments(completion: @escaping (Error?) -> Void) {
+        commentViewModel.loadComments(for: post) { error in
+            completion(error)
         }
     }
     
@@ -47,7 +49,6 @@ class PostDetailsViewModel {
     
     func toggleFavorite() {
         post.isFavorite = !post.isFavorite
-      
     }
 }
 

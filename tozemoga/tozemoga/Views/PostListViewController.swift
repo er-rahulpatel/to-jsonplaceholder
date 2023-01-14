@@ -8,12 +8,14 @@
 import UIKit
 
 class PostListViewController: UIViewController {
+    // MARK: - Variables
     var viewModel : PostsViewModel!
     let apiController = ApiController()
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var noPostLabel: UILabel!
-    var loadingIndicator: UIActivityIndicatorView!
+    var loadingIndicator: LoadingIndicatorView!
     
+    // MARK: - Life cycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
@@ -22,33 +24,13 @@ class PostListViewController: UIViewController {
         viewModel.loadPosts()
     }
     
+    // MARK: - Private functions
     private func setupTableView() {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "PostTableViewCell", bundle: nil), forCellReuseIdentifier: "PostTableViewCell")
     }
-    private func loadingObserver() -> (Bool) -> Void {
-        return { [weak self] isLoading in
-            guard let self = self else { return }
-            if isLoading {
-                DispatchQueue.main.async {
-                    self.loadingIndicator.startAnimating()
-                }
-            } else {
-                DispatchQueue.main.async {
-                    self.loadingIndicator.stopAnimating()
-                }
-            }
-        }
-    }
     
-    private func setupLoadingIndicator() {
-        loadingIndicator = UIActivityIndicatorView(style: .large)
-        view.addSubview(loadingIndicator)
-        loadingIndicator.hidesWhenStopped = true
-        loadingIndicator.center = view.center
-        apiController.isLoadingObserver = loadingObserver()
-    }
     private func bindViewModel() {
         viewModel = PostsViewModel(apiController: apiController)
         viewModel.onDataChanged = { [weak self] in
@@ -60,6 +42,14 @@ class PostListViewController: UIViewController {
             }
         }
     }
+    
+    private func setupLoadingIndicator() {
+        loadingIndicator = LoadingIndicatorView(style: .large)
+        loadingIndicator.configure(for: self.view, apiController: apiController)
+    }
+    
+    // MARK: - IBActions
+    
     @IBAction func deleteTapped(_ sender: Any) {
         if(viewModel.unfavorites.count > 0){
             let alert = UIAlertController(title: "Delete Posts", message: "Are you sure you want to delete unfavorite posts?", preferredStyle: .alert)

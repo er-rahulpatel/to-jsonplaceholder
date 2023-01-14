@@ -28,6 +28,16 @@
 		BB5A3E7429715ED900B8B6E0 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E7329715ED900B8B6E0 /* EndPoint.swift */; };
 		BB5A3E772971625700B8B6E0 /* PostListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E762971625700B8B6E0 /* PostListViewModelTests.swift */; };
 		BB5A3E79297166F100B8B6E0 /* MockApiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E78297166F100B8B6E0 /* MockApiController.swift */; };
+		BB5A3E7B297204F500B8B6E0 /* PostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E7A297204F500B8B6E0 /* PostTests.swift */; };
+		BB5A3E7D2972058300B8B6E0 /* PostDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E7C2972058300B8B6E0 /* PostDetailsViewModelTests.swift */; };
+		BB5A3E812972109A00B8B6E0 /* PostListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E802972109A00B8B6E0 /* PostListViewControllerTests.swift */; };
+		BB5A3E83297232B500B8B6E0 /* PostTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E82297232B500B8B6E0 /* PostTableViewCellTests.swift */; };
+		BB5A3E852972337500B8B6E0 /* CommentsTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E842972337500B8B6E0 /* CommentsTableViewCellTests.swift */; };
+		BB5A3E872972355C00B8B6E0 /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E862972355C00B8B6E0 /* EndpointTests.swift */; };
+		BB5A3E892972365D00B8B6E0 /* UserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E882972365D00B8B6E0 /* UserViewModelTests.swift */; };
+		BB5A3E8B297237CA00B8B6E0 /* CommentsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E8A297237CA00B8B6E0 /* CommentsViewModelTests.swift */; };
+		BB5A3E8D29723C7F00B8B6E0 /* PostDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E8C29723C7F00B8B6E0 /* PostDetailsViewControllerTests.swift */; };
+		BB5A3E8F29724D1300B8B6E0 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E8E29724D1300B8B6E0 /* LoadingIndicatorView.swift */; };
 		BB697BB9296EC81B0059D5DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB697BB8296EC81B0059D5DD /* AppDelegate.swift */; };
 		BB697BBB296EC81B0059D5DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB697BBA296EC81B0059D5DD /* SceneDelegate.swift */; };
 		BB697BC0296EC81B0059D5DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB697BBE296EC81B0059D5DD /* Main.storyboard */; };
@@ -76,6 +86,16 @@
 		BB5A3E7329715ED900B8B6E0 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		BB5A3E762971625700B8B6E0 /* PostListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelTests.swift; sourceTree = "<group>"; };
 		BB5A3E78297166F100B8B6E0 /* MockApiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiController.swift; sourceTree = "<group>"; };
+		BB5A3E7A297204F500B8B6E0 /* PostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTests.swift; sourceTree = "<group>"; };
+		BB5A3E7C2972058300B8B6E0 /* PostDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		BB5A3E802972109A00B8B6E0 /* PostListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewControllerTests.swift; sourceTree = "<group>"; };
+		BB5A3E82297232B500B8B6E0 /* PostTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCellTests.swift; sourceTree = "<group>"; };
+		BB5A3E842972337500B8B6E0 /* CommentsTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewCellTests.swift; sourceTree = "<group>"; };
+		BB5A3E862972355C00B8B6E0 /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
+		BB5A3E882972365D00B8B6E0 /* UserViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModelTests.swift; sourceTree = "<group>"; };
+		BB5A3E8A297237CA00B8B6E0 /* CommentsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModelTests.swift; sourceTree = "<group>"; };
+		BB5A3E8C29723C7F00B8B6E0 /* PostDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewControllerTests.swift; sourceTree = "<group>"; };
+		BB5A3E8E29724D1300B8B6E0 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
 		BB697BB5296EC81B0059D5DD /* tozemoga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tozemoga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB697BB8296EC81B0059D5DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB697BBA296EC81B0059D5DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,7 +211,16 @@
 		BB697BCE296EC81D0059D5DD /* tozemogaTests */ = {
 			isa = PBXGroup;
 			children = (
+				BB5A3E7A297204F500B8B6E0 /* PostTests.swift */,
+				BB5A3E862972355C00B8B6E0 /* EndpointTests.swift */,
 				BB5A3E762971625700B8B6E0 /* PostListViewModelTests.swift */,
+				BB5A3E7C2972058300B8B6E0 /* PostDetailsViewModelTests.swift */,
+				BB5A3E882972365D00B8B6E0 /* UserViewModelTests.swift */,
+				BB5A3E8A297237CA00B8B6E0 /* CommentsViewModelTests.swift */,
+				BB5A3E802972109A00B8B6E0 /* PostListViewControllerTests.swift */,
+				BB5A3E8C29723C7F00B8B6E0 /* PostDetailsViewControllerTests.swift */,
+				BB5A3E82297232B500B8B6E0 /* PostTableViewCellTests.swift */,
+				BB5A3E842972337500B8B6E0 /* CommentsTableViewCellTests.swift */,
 				BB5A3E78297166F100B8B6E0 /* MockApiController.swift */,
 			);
 			path = tozemogaTests;
@@ -234,6 +263,7 @@
 			children = (
 				BB5A3E5A296FB77000B8B6E0 /* ApiController.swift */,
 				BB5A3E7329715ED900B8B6E0 /* EndPoint.swift */,
+				BB5A3E8E29724D1300B8B6E0 /* LoadingIndicatorView.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -393,6 +423,7 @@
 				BB5A3E59296FB75800B8B6E0 /* PostDetailsViewController.swift in Sources */,
 				BB5A3E53296FB71000B8B6E0 /* PostsViewModel.swift in Sources */,
 				BB5A3E6F2971218700B8B6E0 /* CommentsTableViewCell.swift in Sources */,
+				BB5A3E8F29724D1300B8B6E0 /* LoadingIndicatorView.swift in Sources */,
 				BB5A3E7429715ED900B8B6E0 /* EndPoint.swift in Sources */,
 				BB697BBB296EC81B0059D5DD /* SceneDelegate.swift in Sources */,
 				BB5A3E652970D00C00B8B6E0 /* UserViewModel.swift in Sources */,
@@ -409,7 +440,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB5A3E79297166F100B8B6E0 /* MockApiController.swift in Sources */,
+				BB5A3E892972365D00B8B6E0 /* UserViewModelTests.swift in Sources */,
+				BB5A3E8D29723C7F00B8B6E0 /* PostDetailsViewControllerTests.swift in Sources */,
+				BB5A3E8B297237CA00B8B6E0 /* CommentsViewModelTests.swift in Sources */,
+				BB5A3E7D2972058300B8B6E0 /* PostDetailsViewModelTests.swift in Sources */,
+				BB5A3E872972355C00B8B6E0 /* EndpointTests.swift in Sources */,
+				BB5A3E852972337500B8B6E0 /* CommentsTableViewCellTests.swift in Sources */,
+				BB5A3E812972109A00B8B6E0 /* PostListViewControllerTests.swift in Sources */,
+				BB5A3E83297232B500B8B6E0 /* PostTableViewCellTests.swift in Sources */,
 				BB5A3E772971625700B8B6E0 /* PostListViewModelTests.swift in Sources */,
+				BB5A3E7B297204F500B8B6E0 /* PostTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

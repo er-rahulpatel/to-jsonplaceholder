@@ -14,18 +14,17 @@ class CommentsViewModel {
         self.apiController = apiController
     }
     
-    //To load posts from JSONPlaceholder API
-    func loadComments(for post:Post, completion: @escaping (Result<[Comment], Error>) -> Void) {
+    //To load comments from JSONPlaceholder API
+    func loadComments(for post:Post, completion: @escaping (Error?) -> Void) {
         apiController.load(endpoint: .comments(postId: post.id)) { [weak self] (result: Result<[Comment], Error>) in
             guard let self = self else { return }
             switch result {
             case .success(let comments):
                 self.comments = comments
-                completion(.success(comments))
+                completion(nil)
             case .failure(let error):
                 // handle the error
-                print("Error: \(error.localizedDescription)")
-                completion(.failure(error))
+                completion(error)
                 break
             }
         }

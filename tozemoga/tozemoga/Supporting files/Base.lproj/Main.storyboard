@@ -12,7 +12,7 @@
         <!--Posts-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="PostListViewController" customModule="tozemoga" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PostListViewController" id="BYZ-38-t0r" customClass="PostListViewController" customModule="tozemoga" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,7 +79,7 @@
         <!--Post Details View Controller-->
         <scene sceneID="2HF-BA-RaW">
             <objects>
-                <viewController id="CVx-8j-a5K" customClass="PostDetailsViewController" customModule="tozemoga" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PostDetailsViewController" id="CVx-8j-a5K" customClass="PostDetailsViewController" customModule="tozemoga" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P90-iS-Xwq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -366,6 +366,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="y0r-Kh-2Rw">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemTealColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

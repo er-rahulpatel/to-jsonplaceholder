@@ -16,18 +16,17 @@ class UserViewModel {
         self.apiController = apiController
     }
     
-    //To load posts from JSONPlaceholder API
-    func loadUserInfo(completion: @escaping (Result<User, Error>) -> Void) {
+    //To load user info from JSONPlaceholder API
+    func loadUserInfo(completion: @escaping (Error?) -> Void) {
         apiController.load(endpoint: .user(userId: user.id)) { [weak self] (result: Result<User, Error>) in
             guard let self = self else { return }
             switch result {
             case .success(let user):
                 self.user = user
-                completion(.success(user))
+                completion(nil)
             case .failure(let error):
                 // handle the error
-                print("Error: \(error.localizedDescription)")
-                completion(.failure(error))
+                completion(error)
                 break
             }
         }

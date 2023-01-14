@@ -13,7 +13,7 @@ struct Post: Codable, Equatable {
     let title: String?
     let body: String?
     var isFavorite: Bool = false
-   
+    
     init(id: Int, userId: Int, title: String?, body: String?, isFavorite: Bool) {
         self.id = id
         self.userId = userId
@@ -24,11 +24,11 @@ struct Post: Codable, Equatable {
     }
     
     init(from decoder: Decoder) throws {
-            let container = try decoder.container(keyedBy: CodingKeys.self)
-            id = try container.decode(Int.self, forKey: .id)
-            userId = try container.decode(Int.self, forKey: .userId)
-            title = try container.decode(String.self, forKey: .title)
-            body = try container.decode(String.self, forKey: .body)
-            isFavorite = false
-        }
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decode(Int.self, forKey: .id)
+        userId = try container.decode(Int.self, forKey: .userId)
+        title = try container.decode(String.self, forKey: .title)
+        body = try container.decode(String.self, forKey: .body)
+        isFavorite = false
+    }
 }
