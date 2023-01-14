@@ -37,7 +37,7 @@ git clone https://github.com/rahulpatel-langara/to-jsonplaceholder.git
 ✅ Mechanism to remove all posts except the favorites ones.  
 ✅ Mechanism to load all posts from the API.  
 ✅ Unit Tests.  
-✅ Supports iOS 15+ and developed using UIKit.  
+✅ Supports iOS 15+ and developed using UIKit and MVVM architecture.  
 
 ## Screenshots
 <img src="Screenshots/01.png" width="140" title="">&nbsp;&nbsp;&nbsp;
