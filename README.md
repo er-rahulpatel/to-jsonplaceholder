@@ -41,11 +41,11 @@ git clone https://github.com/rahulpatel-langara/to-jsonplaceholder.git
 
 ## Screenshots
 <img src="Screenshots/01.png" width="140" title="">&nbsp;&nbsp;&nbsp;
-  <img src="Screenshots/02.png" width="140" title="">&nbsp;&nbsp;&nbsp;
-  <img src="Screenshots/03.png" width="140" title="">&nbsp;&nbsp;&nbsp;
-  <img src="Screenshots/04.png" width="140" title="">&nbsp;&nbsp;&nbsp;
-  <img src="Screenshots/05.png" width="140" title="">&nbsp;&nbsp;&nbsp;
-  <img src="Screenshots/06.png" width="140" title="">
+  <img src="Screenshots/02.png" width="180" title="">&nbsp;&nbsp;&nbsp;
+  <img src="Screenshots/03.png" width="180" title="">&nbsp;&nbsp;&nbsp;<br>
+  <img src="Screenshots/04.png" width="180" title="">&nbsp;&nbsp;&nbsp;
+  <img src="Screenshots/05.png" width="180" title="">&nbsp;&nbsp;&nbsp;
+  <img src="Screenshots/06.png" width="180" title="">
 
 
 ## Acknowledgments
