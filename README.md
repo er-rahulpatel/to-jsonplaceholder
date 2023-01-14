@@ -40,11 +40,11 @@ git clone https://github.com/rahulpatel-langara/to-jsonplaceholder.git
 ✅ Supports iOS 15+ and developed using UIKit and MVVM architecture.  
 
 ## Screenshots
-<img src="Screenshots/01.png" width="140" title="">&nbsp;&nbsp;&nbsp;
-  <img src="Screenshots/02.png" width="180" title="">&nbsp;&nbsp;&nbsp;
-  <img src="Screenshots/03.png" width="180" title="">&nbsp;&nbsp;&nbsp;<br>
-  <img src="Screenshots/04.png" width="180" title="">&nbsp;&nbsp;&nbsp;
-  <img src="Screenshots/05.png" width="180" title="">&nbsp;&nbsp;&nbsp;
+<img src="Screenshots/01.png" width="140" title="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="Screenshots/02.png" width="180" title="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="Screenshots/03.png" width="180" title=""><br><br><br>
+  <img src="Screenshots/04.png" width="180" title="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="Screenshots/05.png" width="180" title="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="Screenshots/06.png" width="180" title="">
 
 
