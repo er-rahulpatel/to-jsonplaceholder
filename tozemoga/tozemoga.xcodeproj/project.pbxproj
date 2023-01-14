@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB5A3E4D296FB6E600B8B6E0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E4C296FB6E600B8B6E0 /* Post.swift */; };
+		BB5A3E4F296FB6F300B8B6E0 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E4E296FB6F300B8B6E0 /* Comment.swift */; };
+		BB5A3E51296FB6FF00B8B6E0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E50296FB6FF00B8B6E0 /* User.swift */; };
+		BB5A3E53296FB71000B8B6E0 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E52296FB71000B8B6E0 /* PostsViewModel.swift */; };
+		BB5A3E55296FB72100B8B6E0 /* PostDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E54296FB72100B8B6E0 /* PostDetailsViewModel.swift */; };
+		BB5A3E57296FB74500B8B6E0 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E56296FB74500B8B6E0 /* PostListViewController.swift */; };
+		BB5A3E59296FB75800B8B6E0 /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E58296FB75800B8B6E0 /* PostDetailsViewController.swift */; };
+		BB5A3E5B296FB77000B8B6E0 /* ApiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E5A296FB77000B8B6E0 /* ApiController.swift */; };
+		BB5A3E5F296FBD7600B8B6E0 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E5D296FBD7600B8B6E0 /* PostTableViewCell.swift */; };
+		BB5A3E60296FBD7600B8B6E0 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5A3E5E296FBD7600B8B6E0 /* PostTableViewCell.xib */; };
+		BB5A3E632970CFF200B8B6E0 /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E622970CFF200B8B6E0 /* CommentsViewModel.swift */; };
+		BB5A3E652970D00C00B8B6E0 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E642970D00C00B8B6E0 /* UserViewModel.swift */; };
+		BB5A3E68297115BA00B8B6E0 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E67297115BA00B8B6E0 /* PostView.swift */; };
+		BB5A3E6A297115CC00B8B6E0 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E69297115CC00B8B6E0 /* UserView.swift */; };
+		BB5A3E6C297115D900B8B6E0 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E6B297115D900B8B6E0 /* CommentsView.swift */; };
+		BB5A3E6F2971218700B8B6E0 /* CommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E6D2971218700B8B6E0 /* CommentsTableViewCell.swift */; };
+		BB5A3E702971218700B8B6E0 /* CommentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5A3E6E2971218700B8B6E0 /* CommentsTableViewCell.xib */; };
+		BB5A3E722971534200B8B6E0 /* PostDetailsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E712971534200B8B6E0 /* PostDetailsViewProtocol.swift */; };
+		BB5A3E7429715ED900B8B6E0 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E7329715ED900B8B6E0 /* EndPoint.swift */; };
+		BB5A3E772971625700B8B6E0 /* PostListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E762971625700B8B6E0 /* PostListViewModelTests.swift */; };
+		BB5A3E79297166F100B8B6E0 /* MockApiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E78297166F100B8B6E0 /* MockApiController.swift */; };
+		BB5A3E7B297204F500B8B6E0 /* PostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E7A297204F500B8B6E0 /* PostTests.swift */; };
+		BB5A3E7D2972058300B8B6E0 /* PostDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E7C2972058300B8B6E0 /* PostDetailsViewModelTests.swift */; };
+		BB5A3E812972109A00B8B6E0 /* PostListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E802972109A00B8B6E0 /* PostListViewControllerTests.swift */; };
+		BB5A3E83297232B500B8B6E0 /* PostTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E82297232B500B8B6E0 /* PostTableViewCellTests.swift */; };
+		BB5A3E852972337500B8B6E0 /* CommentsTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E842972337500B8B6E0 /* CommentsTableViewCellTests.swift */; };
+		BB5A3E872972355C00B8B6E0 /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E862972355C00B8B6E0 /* EndpointTests.swift */; };
+		BB5A3E892972365D00B8B6E0 /* UserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E882972365D00B8B6E0 /* UserViewModelTests.swift */; };
+		BB5A3E8B297237CA00B8B6E0 /* CommentsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E8A297237CA00B8B6E0 /* CommentsViewModelTests.swift */; };
+		BB5A3E8D29723C7F00B8B6E0 /* PostDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E8C29723C7F00B8B6E0 /* PostDetailsViewControllerTests.swift */; };
+		BB5A3E8F29724D1300B8B6E0 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A3E8E29724D1300B8B6E0 /* LoadingIndicatorView.swift */; };
+		BB697BB9296EC81B0059D5DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB697BB8296EC81B0059D5DD /* AppDelegate.swift */; };
+		BB697BBB296EC81B0059D5DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB697BBA296EC81B0059D5DD /* SceneDelegate.swift */; };
+		BB697BC0296EC81B0059D5DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB697BBE296EC81B0059D5DD /* Main.storyboard */; };
+		BB697BC2296EC81D0059D5DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB697BC1296EC81D0059D5DD /* Assets.xcassets */; };
+		BB697BC5296EC81D0059D5DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB697BC3296EC81D0059D5DD /* LaunchScreen.storyboard */; };
+		BB697BDA296EC81D0059D5DD /* tozemogaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB697BD9296EC81D0059D5DD /* tozemogaUITests.swift */; };
+		BB697BDC296EC81D0059D5DD /* tozemogaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB697BDB296EC81D0059D5DD /* tozemogaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB697BCC296EC81D0059D5DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB697BAD296EC81B0059D5DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB697BB4296EC81B0059D5DD;
+			remoteInfo = tozemoga;
+		};
+		BB697BD6296EC81D0059D5DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB697BAD296EC81B0059D5DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB697BB4296EC81B0059D5DD;
+			remoteInfo = tozemoga;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB5A3E4C296FB6E600B8B6E0 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		BB5A3E4E296FB6F300B8B6E0 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		BB5A3E50296FB6FF00B8B6E0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BB5A3E52296FB71000B8B6E0 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		BB5A3E54296FB72100B8B6E0 /* PostDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModel.swift; sourceTree = "<group>"; };
+		BB5A3E56296FB74500B8B6E0 /* PostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
+		BB5A3E58296FB75800B8B6E0 /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
+		BB5A3E5A296FB77000B8B6E0 /* ApiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiController.swift; sourceTree = "<group>"; };
+		BB5A3E5D296FBD7600B8B6E0 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		BB5A3E5E296FBD7600B8B6E0 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		BB5A3E622970CFF200B8B6E0 /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
+		BB5A3E642970D00C00B8B6E0 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		BB5A3E67297115BA00B8B6E0 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		BB5A3E69297115CC00B8B6E0 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		BB5A3E6B297115D900B8B6E0 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		BB5A3E6D2971218700B8B6E0 /* CommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewCell.swift; sourceTree = "<group>"; };
+		BB5A3E6E2971218700B8B6E0 /* CommentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsTableViewCell.xib; sourceTree = "<group>"; };
+		BB5A3E712971534200B8B6E0 /* PostDetailsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewProtocol.swift; sourceTree = "<group>"; };
+		BB5A3E7329715ED900B8B6E0 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		BB5A3E762971625700B8B6E0 /* PostListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelTests.swift; sourceTree = "<group>"; };
+		BB5A3E78297166F100B8B6E0 /* MockApiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiController.swift; sourceTree = "<group>"; };
+		BB5A3E7A297204F500B8B6E0 /* PostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTests.swift; sourceTree = "<group>"; };
+		BB5A3E7C2972058300B8B6E0 /* PostDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		BB5A3E802972109A00B8B6E0 /* PostListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewControllerTests.swift; sourceTree = "<group>"; };
+		BB5A3E82297232B500B8B6E0 /* PostTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCellTests.swift; sourceTree = "<group>"; };
+		BB5A3E842972337500B8B6E0 /* CommentsTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewCellTests.swift; sourceTree = "<group>"; };
+		BB5A3E862972355C00B8B6E0 /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
+		BB5A3E882972365D00B8B6E0 /* UserViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModelTests.swift; sourceTree = "<group>"; };
+		BB5A3E8A297237CA00B8B6E0 /* CommentsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModelTests.swift; sourceTree = "<group>"; };
+		BB5A3E8C29723C7F00B8B6E0 /* PostDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewControllerTests.swift; sourceTree = "<group>"; };
+		BB5A3E8E29724D1300B8B6E0 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
+		BB697BB5296EC81B0059D5DD /* tozemoga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tozemoga.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB697BB8296EC81B0059D5DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB697BBA296EC81B0059D5DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BB697BBF296EC81B0059D5DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB697BC1296EC81D0059D5DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB697BC4296EC81D0059D5DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB697BC6296EC81D0059D5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB697BCB296EC81D0059D5DD /* tozemogaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tozemogaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB697BD5296EC81D0059D5DD /* tozemogaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tozemogaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB697BD9296EC81D0059D5DD /* tozemogaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tozemogaUITests.swift; sourceTree = "<group>"; };
+		BB697BDB296EC81D0059D5DD /* tozemogaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tozemogaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB697BB2296EC81B0059D5DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB697BC8296EC81D0059D5DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB697BD2296EC81D0059D5DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB5A3E5C296FB7C300B8B6E0 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				BB697BC6296EC81D0059D5DD /* Info.plist */,
+				BB697BC1296EC81D0059D5DD /* Assets.xcassets */,
+				BB697BC3296EC81D0059D5DD /* LaunchScreen.storyboard */,
+				BB697BBE296EC81B0059D5DD /* Main.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		BB5A3E61296FBD8D00B8B6E0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A3E5D296FBD7600B8B6E0 /* PostTableViewCell.swift */,
+				BB5A3E5E296FBD7600B8B6E0 /* PostTableViewCell.xib */,
+				BB5A3E6D2971218700B8B6E0 /* CommentsTableViewCell.swift */,
+				BB5A3E6E2971218700B8B6E0 /* CommentsTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BB5A3E662971157700B8B6E0 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A3E67297115BA00B8B6E0 /* PostView.swift */,
+				BB5A3E69297115CC00B8B6E0 /* UserView.swift */,
+				BB5A3E6B297115D900B8B6E0 /* CommentsView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		BB5A3E752971607E00B8B6E0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A3E712971534200B8B6E0 /* PostDetailsViewProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BB697BAC296EC81B0059D5DD = {
+			isa = PBXGroup;
+			children = (
+				BB697BB7296EC81B0059D5DD /* tozemoga */,
+				BB697BCE296EC81D0059D5DD /* tozemogaTests */,
+				BB697BD8296EC81D0059D5DD /* tozemogaUITests */,
+				BB697BB6296EC81B0059D5DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB697BB6296EC81B0059D5DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB697BB5296EC81B0059D5DD /* tozemoga.app */,
+				BB697BCB296EC81D0059D5DD /* tozemogaTests.xctest */,
+				BB697BD5296EC81D0059D5DD /* tozemogaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB697BB7296EC81B0059D5DD /* tozemoga */ = {
+			isa = PBXGroup;
+			children = (
+				BB697BB8296EC81B0059D5DD /* AppDelegate.swift */,
+				BB697BBA296EC81B0059D5DD /* SceneDelegate.swift */,
+				BB5A3E5C296FB7C300B8B6E0 /* Supporting files */,
+				BB697BEC296EC8E50059D5DD /* Network */,
+				BB697BED296EC9180059D5DD /* Model */,
+				BB697BEA296EC8D10059D5DD /* ViewModels */,
+				BB697BE9296EC8C90059D5DD /* Views */,
+			);
+			path = tozemoga;
+			sourceTree = "<group>";
+		};
+		BB697BCE296EC81D0059D5DD /* tozemogaTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A3E7A297204F500B8B6E0 /* PostTests.swift */,
+				BB5A3E862972355C00B8B6E0 /* EndpointTests.swift */,
+				BB5A3E762971625700B8B6E0 /* PostListViewModelTests.swift */,
+				BB5A3E7C2972058300B8B6E0 /* PostDetailsViewModelTests.swift */,
+				BB5A3E882972365D00B8B6E0 /* UserViewModelTests.swift */,
+				BB5A3E8A297237CA00B8B6E0 /* CommentsViewModelTests.swift */,
+				BB5A3E802972109A00B8B6E0 /* PostListViewControllerTests.swift */,
+				BB5A3E8C29723C7F00B8B6E0 /* PostDetailsViewControllerTests.swift */,
+				BB5A3E82297232B500B8B6E0 /* PostTableViewCellTests.swift */,
+				BB5A3E842972337500B8B6E0 /* CommentsTableViewCellTests.swift */,
+				BB5A3E78297166F100B8B6E0 /* MockApiController.swift */,
+			);
+			path = tozemogaTests;
+			sourceTree = "<group>";
+		};
+		BB697BD8296EC81D0059D5DD /* tozemogaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB697BD9296EC81D0059D5DD /* tozemogaUITests.swift */,
+				BB697BDB296EC81D0059D5DD /* tozemogaUITestsLaunchTests.swift */,
+			);
+			path = tozemogaUITests;
+			sourceTree = "<group>";
+		};
+		BB697BE9296EC8C90059D5DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A3E56296FB74500B8B6E0 /* PostListViewController.swift */,
+				BB5A3E58296FB75800B8B6E0 /* PostDetailsViewController.swift */,
+				BB5A3E752971607E00B8B6E0 /* Protocols */,
+				BB5A3E662971157700B8B6E0 /* SubViews */,
+				BB5A3E61296FBD8D00B8B6E0 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB697BEA296EC8D10059D5DD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A3E52296FB71000B8B6E0 /* PostsViewModel.swift */,
+				BB5A3E54296FB72100B8B6E0 /* PostDetailsViewModel.swift */,
+				BB5A3E622970CFF200B8B6E0 /* CommentsViewModel.swift */,
+				BB5A3E642970D00C00B8B6E0 /* UserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BB697BEC296EC8E50059D5DD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A3E5A296FB77000B8B6E0 /* ApiController.swift */,
+				BB5A3E7329715ED900B8B6E0 /* EndPoint.swift */,
+				BB5A3E8E29724D1300B8B6E0 /* LoadingIndicatorView.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BB697BED296EC9180059D5DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A3E4C296FB6E600B8B6E0 /* Post.swift */,
+				BB5A3E4E296FB6F300B8B6E0 /* Comment.swift */,
+				BB5A3E50296FB6FF00B8B6E0 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB697BB4296EC81B0059D5DD /* tozemoga */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB697BDF296EC81D0059D5DD /* Build configuration list for PBXNativeTarget "tozemoga" */;
+			buildPhases = (
+				BB697BB1296EC81B0059D5DD /* Sources */,
+				BB697BB2296EC81B0059D5DD /* Frameworks */,
+				BB697BB3296EC81B0059D5DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tozemoga;
+			productName = tozemoga;
+			productReference = BB697BB5296EC81B0059D5DD /* tozemoga.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB697BCA296EC81D0059D5DD /* tozemogaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB697BE2296EC81D0059D5DD /* Build configuration list for PBXNativeTarget "tozemogaTests" */;
+			buildPhases = (
+				BB697BC7296EC81D0059D5DD /* Sources */,
+				BB697BC8296EC81D0059D5DD /* Frameworks */,
+				BB697BC9296EC81D0059D5DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB697BCD296EC81D0059D5DD /* PBXTargetDependency */,
+			);
+			name = tozemogaTests;
+			productName = tozemogaTests;
+			productReference = BB697BCB296EC81D0059D5DD /* tozemogaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB697BD4296EC81D0059D5DD /* tozemogaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB697BE5296EC81D0059D5DD /* Build configuration list for PBXNativeTarget "tozemogaUITests" */;
+			buildPhases = (
+				BB697BD1296EC81D0059D5DD /* Sources */,
+				BB697BD2296EC81D0059D5DD /* Frameworks */,
+				BB697BD3296EC81D0059D5DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB697BD7296EC81D0059D5DD /* PBXTargetDependency */,
+			);
+			name = tozemogaUITests;
+			productName = tozemogaUITests;
+			productReference = BB697BD5296EC81D0059D5DD /* tozemogaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB697BAD296EC81B0059D5DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BB697BB4296EC81B0059D5DD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					BB697BCA296EC81D0059D5DD = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+						TestTargetID = BB697BB4296EC81B0059D5DD;
+					};
+					BB697BD4296EC81D0059D5DD = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = BB697BB4296EC81B0059D5DD;
+					};
+				};
+			};
+			buildConfigurationList = BB697BB0296EC81B0059D5DD /* Build configuration list for PBXProject "tozemoga" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB697BAC296EC81B0059D5DD;
+			productRefGroup = BB697BB6296EC81B0059D5DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB697BB4296EC81B0059D5DD /* tozemoga */,
+				BB697BCA296EC81D0059D5DD /* tozemogaTests */,
+				BB697BD4296EC81D0059D5DD /* tozemogaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB697BB3296EC81B0059D5DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB697BC5296EC81D0059D5DD /* LaunchScreen.storyboard in Resources */,
+				BB697BC2296EC81D0059D5DD /* Assets.xcassets in Resources */,
+				BB697BC0296EC81B0059D5DD /* Main.storyboard in Resources */,
+				BB5A3E60296FBD7600B8B6E0 /* PostTableViewCell.xib in Resources */,
+				BB5A3E702971218700B8B6E0 /* CommentsTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB697BC9296EC81D0059D5DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB697BD3296EC81D0059D5DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB697BB1296EC81B0059D5DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5A3E68297115BA00B8B6E0 /* PostView.swift in Sources */,
+				BB5A3E632970CFF200B8B6E0 /* CommentsViewModel.swift in Sources */,
+				BB5A3E5F296FBD7600B8B6E0 /* PostTableViewCell.swift in Sources */,
+				BB5A3E57296FB74500B8B6E0 /* PostListViewController.swift in Sources */,
+				BB5A3E4D296FB6E600B8B6E0 /* Post.swift in Sources */,
+				BB5A3E5B296FB77000B8B6E0 /* ApiController.swift in Sources */,
+				BB697BB9296EC81B0059D5DD /* AppDelegate.swift in Sources */,
+				BB5A3E6A297115CC00B8B6E0 /* UserView.swift in Sources */,
+				BB5A3E59296FB75800B8B6E0 /* PostDetailsViewController.swift in Sources */,
+				BB5A3E53296FB71000B8B6E0 /* PostsViewModel.swift in Sources */,
+				BB5A3E6F2971218700B8B6E0 /* CommentsTableViewCell.swift in Sources */,
+				BB5A3E8F29724D1300B8B6E0 /* LoadingIndicatorView.swift in Sources */,
+				BB5A3E7429715ED900B8B6E0 /* EndPoint.swift in Sources */,
+				BB697BBB296EC81B0059D5DD /* SceneDelegate.swift in Sources */,
+				BB5A3E652970D00C00B8B6E0 /* UserViewModel.swift in Sources */,
+				BB5A3E722971534200B8B6E0 /* PostDetailsViewProtocol.swift in Sources */,
+				BB5A3E51296FB6FF00B8B6E0 /* User.swift in Sources */,
+				BB5A3E55296FB72100B8B6E0 /* PostDetailsViewModel.swift in Sources */,
+				BB5A3E6C297115D900B8B6E0 /* CommentsView.swift in Sources */,
+				BB5A3E4F296FB6F300B8B6E0 /* Comment.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB697BC7296EC81D0059D5DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5A3E79297166F100B8B6E0 /* MockApiController.swift in Sources */,
+				BB5A3E892972365D00B8B6E0 /* UserViewModelTests.swift in Sources */,
+				BB5A3E8D29723C7F00B8B6E0 /* PostDetailsViewControllerTests.swift in Sources */,
+				BB5A3E8B297237CA00B8B6E0 /* CommentsViewModelTests.swift in Sources */,
+				BB5A3E7D2972058300B8B6E0 /* PostDetailsViewModelTests.swift in Sources */,
+				BB5A3E872972355C00B8B6E0 /* EndpointTests.swift in Sources */,
+				BB5A3E852972337500B8B6E0 /* CommentsTableViewCellTests.swift in Sources */,
+				BB5A3E812972109A00B8B6E0 /* PostListViewControllerTests.swift in Sources */,
+				BB5A3E83297232B500B8B6E0 /* PostTableViewCellTests.swift in Sources */,
+				BB5A3E772971625700B8B6E0 /* PostListViewModelTests.swift in Sources */,
+				BB5A3E7B297204F500B8B6E0 /* PostTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB697BD1296EC81D0059D5DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB697BDC296EC81D0059D5DD /* tozemogaUITestsLaunchTests.swift in Sources */,
+				BB697BDA296EC81D0059D5DD /* tozemogaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB697BCD296EC81D0059D5DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB697BB4296EC81B0059D5DD /* tozemoga */;
+			targetProxy = BB697BCC296EC81D0059D5DD /* PBXContainerItemProxy */;
+		};
+		BB697BD7296EC81D0059D5DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB697BB4296EC81B0059D5DD /* tozemoga */;
+			targetProxy = BB697BD6296EC81D0059D5DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB697BBE296EC81B0059D5DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB697BBF296EC81B0059D5DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB697BC3296EC81D0059D5DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB697BC4296EC81D0059D5DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB697BDD296EC81D0059D5DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB697BDE296EC81D0059D5DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB697BE0296EC81D0059D5DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tozemoga/Supporting files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = self.learning.tozemoga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB697BE1296EC81D0059D5DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tozemoga/Supporting files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = self.learning.tozemoga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB697BE3296EC81D0059D5DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = self.learning.tozemogaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tozemoga.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/tozemoga";
+			};
+			name = Debug;
+		};
+		BB697BE4296EC81D0059D5DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = self.learning.tozemogaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tozemoga.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/tozemoga";
+			};
+			name = Release;
+		};
+		BB697BE6296EC81D0059D5DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = self.learning.tozemogaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tozemoga;
+			};
+			name = Debug;
+		};
+		BB697BE7296EC81D0059D5DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = self.learning.tozemogaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tozemoga;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB697BB0296EC81B0059D5DD /* Build configuration list for PBXProject "tozemoga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB697BDD296EC81D0059D5DD /* Debug */,
+				BB697BDE296EC81D0059D5DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB697BDF296EC81D0059D5DD /* Build configuration list for PBXNativeTarget "tozemoga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB697BE0296EC81D0059D5DD /* Debug */,
+				BB697BE1296EC81D0059D5DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB697BE2296EC81D0059D5DD /* Build configuration list for PBXNativeTarget "tozemogaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB697BE3296EC81D0059D5DD /* Debug */,
+				BB697BE4296EC81D0059D5DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB697BE5296EC81D0059D5DD /* Build configuration list for PBXNativeTarget "tozemogaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB697BE6296EC81D0059D5DD /* Debug */,
+				BB697BE7296EC81D0059D5DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB697BAD296EC81B0059D5DD /* Project object */;
+}
