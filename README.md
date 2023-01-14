@@ -23,20 +23,20 @@ git clone https://github.com/rahulpatel-langara/to-jsonplaceholder.git
 
 ## Functionalities
 
-✅ Loads the posts from the JSON API and populate the view.
-✅ Each cell/row shows the post's title without clipping (dynamic height).
-✅ Once a Post is selected, it opens Post Details Screen.
-✅ The post details screen contains
-  ✅ The post title and description. 
-  ✅ The post author information. 
-  ✅ The list of comments.
-✅ Mechanism to favorite/unfavorite a post 
-  ✅ Favorite posts display at the top of the list. 
-  ✅ Favorite posts have a star indicator.
-✅ Mechanism to delete a post.
-✅ Mechanism to remove all posts except the favorites ones. 
-✅ Mechanism to load all posts from the API.
-✅ Unit Tests.
+✅ Loads the posts from the JSON API and populate the view. 
+✅ Each cell/row shows the post's title without clipping (dynamic height). 
+✅ Once a Post is selected, it opens Post Details Screen. 
+✅ The post details screen contains 	  
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ The post title and description.  	  
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ The post author information.  	  
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ The list of comments. 
+✅ Mechanism to favorite/unfavorite a post  	  
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ Favorite posts display at the top of the list.  	 
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ Favorite posts have a star indicator. 
+✅ Mechanism to delete a post. 
+✅ Mechanism to remove all posts except the favorites ones.  
+✅ Mechanism to load all posts from the API. 
+✅ Unit Tests. 
 ✅ Supports iOS 15+ and developed using UIKit
 
 ## Screenshots
